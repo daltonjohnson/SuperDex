@@ -7,7 +7,7 @@ class Pokemon(models.Model):
 	nickname = models.CharField(max_length=50)
 	number = models.IntegerField(primary_key=True)
 	imageurl = models.URLField
-	poke_type = models.ForeignKey(Poke_type)
+	poke_type = models.ForeignKey('poke_type')
 	genderratio = models.CharField(max_length=30)
 	catchrate = models.CharField(max_length=30)
 	egggroups = models.CharField(max_length=30)
@@ -32,6 +32,8 @@ class Pokemon(models.Model):
 	def __str__(self):
 		return self.name
 
+class poke_type(models.Model):
+
 class Ability(models.Model):
 	ability_id = models.IntegerField(primary_key=True)
 	name = models.CharField(max_length = 20)
@@ -40,4 +42,38 @@ class Ability(models.Model):
 		return self.name
 
 class has_ability(models.Model):
-	ID = models.ForeignKey()
+	ability_id = models.ForeignKey(Ability)
+	pokemon_id = models.ForeignKey(Pokemon)
+	def __str__(self):
+		return self.ability_id
+
+class Moves(models.Model):
+	move_id = models.IntegerField(primary_key=True)
+	name = models.CharField(max_length=30)
+	move_type = models.CharField(max_length=15)
+	category = models.CharField(max_length=15)
+	pp = models.IntegerField
+	power = models.CharField(max_length=15)
+	accuracy = models.CharField(max_length=15)
+	gen = = models.CharField(max_length=5)
+	def __str__(self):
+		return self.name
+
+class learnset(models.Model):
+	pokemon_id = models.ForeignKey(Pokemon)
+	move_id = models.ForeignKey(Moves)
+	level = models.IntegerField
+	def __str__(self):
+		return self.move_id
+
+class can_learn
+	pokemon_id = models.ForeignKey(Pokemon)
+	move_id = models.ForeignKey(move)
+	def __str__(self):
+		return self.pokemon_id
+
+class Evolution(models.Model):
+	pokemon_id1 = models.ForeignKey(Pokemon)
+	pokemon_id2 = models.ForeignKey(Pokemon)
+	how = models.CharField(max_length=20)
+	
