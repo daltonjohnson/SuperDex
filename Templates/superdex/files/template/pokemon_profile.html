@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>SuperDex</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" href="style/css/media-queries.css" />
+<link rel="stylesheet" type="text/css" href="style/js/player/mediaelementplayer.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' rel="stylesheet" type='text/css'>
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all" />
+<![endif]-->
+<script type="text/javascript" src="style/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="style/js/retina.js"></script>
+<script type="text/javascript" src="style/js/selectnav.js"></script>
+<script type="text/javascript" src="style/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="style/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="style/js/mediaelement.min.js"></script>
+<script type="text/javascript" src="style/js/mediaelementplayer.min.js"></script>
+<script type="text/javascript" src="style/js/jquery.dcflickr.1.0.js"></script>
+<script type="text/javascript" src="style/js/twitter.min.js"></script>
+<script type="text/javascript">
+	$.backstretch("style/images/bg/pokedex-booting_mod.jpg");
+</script>
+</head>
+<body>
+<div class="scanlines"></div>
+
+<!-- Begin Header -->
+<div class="header-wrapper opacity">
+	<div class="header">
+		<!-- Begin Logo -->
+		<div class="logo">
+		    <a href="main_search.html">
+				<img src="style/images/Superdex_logo.png" alt="" />
+			</a>
+	    </div>
+		<!-- End Logo -->
+		<!-- Begin Menu -->
+		<div id="menu-wrapper">
+			<div id="menu" class="menu">
+				<ul id="tiny">
+					<li><a href="main_search.html">Search</a>
+					</li>
+					<li><a href="">Settings</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<!-- End Menu -->
+	</div>
+</div>
+<!-- End Header -->
+
+<!-- Begin Wrapper -->
+<div class="wrapper"><!-- Begin Intro -->
+<!--<ul class="social">
+<li><a class="rss" href="#"></a></li><li><a class="facebook" href="#"></a></li><li><a class="twitter" href="#"></a></li><li><a class="pinterest" href="#"></a></li><li><a class="dribbble" href="#"></a></li><li><a class="flickr" href="#"></a></li><li><a class="linkedin" href="#"></a></li></ul> --><!-- End Intro --> 
+
+<!-- Begin Container -->
+<div class="box">
+<h1 class="title">Pokémon Name</h1>
+<h2 class="title">###, The _____ Pokémon</h2>
+		
+		<div class="one-third">
+			<div class="outer none"><span class="inset">Image Goes Here</span></div>
+		</div>
+		
+		<div class="two-third last">
+			<h3>Who's that Pokémon?</h3>
+			<p>Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			Navigate to: <a href="#catch">Catching this Pokémon</a>, <a href="#battle">Battling with this Pokémon</a>, <a href="#hatch">Hatching this Pokémon</a>, <a href="#learnset">Learnset</a>
+			<hr />
+			
+			<div class="one-half">
+				<h6>Type</h6>
+				<p>Pokémon type</p>
+				<hr />
+				<h6>Abilties</h6>
+					<ul>
+						<li> Ability 1 </li>
+						<li> Ability 2 </li>
+					</ul>
+						
+				<hr />
+				
+			</div>
+			<div class="one-half last">
+				<h6>Height / Weight</h6>
+				<p>X'XX", Xm / X lbs., X kg</p>
+				<hr />
+				<h6>Evolution</h6>
+					<ul>
+								<li> Evolves from: </li>
+								<li>Evolves into: </li>
+							</ul>
+				<hr />
+			</div>
+		</div>
+		<!--below image -->
+		<div class="one-third">	
+		<h3><a id="catch"></a>Catching this Pokémon</h3>
+			<h6>Catch Rate</h6>
+			<p>X%</p>
+			<hr />
+			<h6>Gender Ratio</h6>
+			<p>X% Female, Y% Male</p>
+			<hr />
+		
+		<h6>Game Locations</h6>
+			<ul>
+					<li> Location 1 </li>
+					<li> Location 2 </li>
+			</ul>
+			<hr />
+
+		<h3><a id="hatch"></a>Hatching this Pokémon</h3>
+			<h6>Hatch Time</h6>
+			<p>Hatch Time</p>
+			<hr />
+			
+			<h6>Egg Group</h6>
+			<p>Egg Group</p>
+			<hr />
+		</div>
+		<div class="two-third last">	
+		
+		<h3><a id="battle"></a>Battling with this Pokémon </h3>
+		<h6>Type Effectiveness</h6>
+				<ul>
+							<li>Damaged normally by: </li>
+							<li>Weak to: </li>
+							<li>Immune to: </li>
+							<li>Resistant to: </li>
+							<li>Special Cases: </li>
+						</ul>
+				<hr />
+		<h3> Training this Pokémon </h3>
+		<h6>Base Stats (out of 255)</h6>
+			<table>
+
+			<tr>
+			<td>
+				<table>
+				<tr>
+				<th style="width: 75px;">HP</a>:
+				</th>
+				<th style="width: 30px;"> 45
+				</th>
+				<td style="background: #FF0000; width: 45px;">
+				</td></tr></table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table>
+				<tr>
+				<th style="width: 75px;">Attack:
+				</th>
+				<th style="width: 30px;"> 49
+				</th>
+				<td style="background: #F08030; width: 49px;">
+				</td>
+				</tr>
+				</table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table cellspacing="0" cellpadding="0">
+				<tr>
+				<th style="width: 75px;"> Defense:
+				</th>
+				<th style="width: 30px;"> 49
+				</th>
+				<td style="background: #F8D030; width: 49px;">
+				</td></tr></table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table cellspacing="0" cellpadding="0">
+				<tr>
+				<th style="width: 75px;">Sp.Atk:
+				</th>
+				<th style=" width: 30px;"> 65
+				</th>
+				<td style="background: #6890F0; width: 65px;">
+				</td></tr></table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<table cellspacing="0" cellpadding="0">
+			<tr>
+			<th style="width: 75px;"> Sp.Def:
+			</th>
+			<th style="width: 30px;"> 65
+			</th>
+			<td style="background: #78C850; width: 65px;">
+			</td></tr></table>
+			</td></tr>
+			<tr>
+			<td>
+				<table cellspacing="0" cellpadding="0">
+				<tr>
+				<th style="width: 75px;"> Speed:
+				</th>
+				<th style="width: 30px;"> 45
+				</th>
+				<td style="background: #F85888; width: 45px;">
+				</td></tr></table>
+			</td>
+			</tr>
+			<tr>
+			<td>
+				<table width="100%">
+				<tr>
+				<th style="width: 75px;"> Total:
+				</th>
+				<th style="width: 30px;"> 318
+				</th>
+				<td style="width: 255px;"> 
+				</td></tr></table>
+			</td></tr>
+			</table>
+			<hr />
+			<h6><a id="learnset"></a>Learnset by Level</h6>
+			<table width="100%">
+				<tr>
+				<th>Level</th>
+				<th>Move</th>
+				<th>Type</th>
+				<th>Category</th>
+				<th>Power</th>
+				<th>Accuracy</th>
+				<th>PP</th>
+				</tr>
+				<tr>
+				<td>Start</td>
+				<td>Tackle</td>
+				<td>Normal</td>
+				<td>Physical</td>
+				<td>50</td>
+				<td>100%</td>
+				<td>35</td>
+				</tr>
+			</table>
+			<hr />
+			<h6>Learnset by TM</h6>
+			<table width="100%">
+				<tr>
+				<th>TM</th>
+				<th>Move</th>
+				<th>Type</th>
+				<th>Category</th>
+				<th>Power</th>
+				<th>Accuracy</th>
+				<th>PP</th>
+				</tr>
+				<tr>
+				<td>TM06</td>
+				<td>Toxic</td>
+				<td>Poison</td>
+				<td>Status</td>
+				<td>--</td>
+				<td>90%</td>
+				<td>10</td>
+				</tr>
+			</table>
+			<hr />
+			<div class="one-half">
+				
+				<h6>Base Friendship</h6>
+					<p>X</p>
+					<hr />
+			</div>	
+			<div class="one-half last">
+				<h6>EV Yield</h6>
+				<ul>
+							<li>HP: </li>
+							<li>Atk: </li>
+							<li>Def: </li>
+							<li>Sp.Atk: </li>
+							<li>Sp.Def: </li>
+							<li>Speed: </li>
+						</ul>
+				<hr />
+			</div>	
+			
+		</div>
+</div>
+		<div class="clear"></div>
+
+</div>
+<!-- End Container -->
+
+</div>
+<!-- End Wrapper -->
+
+<!-- Begin Footer -->
+<div class="footer-wrapper">
+<div id="footer" class="four">
+		<div id="first" class="widget-area">
+			<div class="widget widget_archive">
+				<h3 class="widget-title">Recently Searched Pokémon</h3>
+				<ul>
+					<li><a href="#">Pokémon 1</a></li>
+					<li><a href="#">Pokémon 2</a></li>
+					<li><a href="#">Pokémon 3</a></li>
+					<li><a href="#">Pokémon 4</a></li>
+					<li><a href="#">Pokémon 5</a></li>
+		
+				</ul>
+			</div>
+		</div>
+		<div id="second" class="widget-area">
+			<div class="widget widget_archive">
+				<h3 class="widget-title">Recently Searched Comparisons</h3>
+				<ul>
+					<li><a href="#">Pokémon 1 vs Pokémon 2</a> </li>
+					<li><a href="#">Pokémon 3 vs Pokémon 2</a></li>
+		
+				</ul>
+			</div>
+		</div>
+	</div>
+</div> 
+<div class="site-generator-wrapper">
+	<div class="site-generator">SuperDex is a CS473 Project by Devon Balicki, James Cheng, Dalton Johnson, and Jeff Zhu <br />
+		Template Design Copyright Obscura 2012. Design by <a href="http://elemisfreebies.com">elemis</a>. All rights reserved. Pokedex Wallpaper distributed by <a href="http://www.superbwallpapers.com/games/pokedex-booting-15992/">Superb Wallpapers </a></div>
+</div>
+<!-- End Footer --> 
+<script type="text/javascript" src="style/js/scripts.js"></script>
+</body>
+</html>
